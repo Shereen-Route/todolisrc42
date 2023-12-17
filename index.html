@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <main class=" container m-5 p-5 rounded mx-auto bg-light shadow">
+     <header class="row ">
+       <div class="col-lg-12">
+        <div class="d-flex justify-content-center gap-3  text-primary">
+          <i class="fa fa-check bg-primary text-white fs-1 rounded p-2"></i>
+          <h1 class="text-decoration-underline">My Todo List </h1>
+      </div>
+       </div>
+     </header>
+
+     <section id="addTask" class="mt-5">
+       <div class="row ">
+        <div class="col-lg-12 position-relative ">
+          <input type="text" class="form-control-lg form-control"  id="addInput" placeholder="Add New Task ..." >
+          <div class="d-flex gap-2 w-auto position-absolute top-50 add">
+            <input type="date" name="clenderButton" class="form-control" id="dateInput"  >
+            <button class="btn btn-primary" id="addButton" onclick="addTask()">Add</button>
+           </div>
+
+        </div>  
+       </div>
+     </section>
+
+     <section id="display" class="mt-5">
+      <div class="row" id="TaskContent">
+
+        
+       
+      </div>
+     </section>
+  </main>
+ 
+ 
+ 
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
